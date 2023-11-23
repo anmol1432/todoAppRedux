@@ -1,0 +1,26 @@
+.sec {
+    display: flex;
+    border-bottom: 2px solid #efe8e8;
+    justify-content: center;
+}
+
+.sec2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.todoHeading {
+    font-size: 1.5rem;
+    margin: 3rem 0px 3rem 0px;
+}
+
+.form-select {
+    width: 100%;
+    /* width: fit-content; */
+}
+
+.saveBtn {
+    border-bottom: none;
+}

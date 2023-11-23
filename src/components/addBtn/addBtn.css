@@ -1,0 +1,10 @@
+.svg {
+    position: relative;
+    top: 5rem;
+    left: 10rem;
+    height: 0px;
+}
+
+.svg>svg {
+    height: 5rem;
+}

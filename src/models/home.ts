@@ -13,3 +13,10 @@ export interface taskData {
 export interface stateType {
     root: any
 }
+
+export interface select {
+    defaultValue: string;
+    changeEvent: any | Function;
+    options: Array<string>
+    disable: boolean
+}
