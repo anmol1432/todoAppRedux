@@ -1,0 +1,12 @@
+.date {
+    padding: 2rem;
+}
+
+.day {
+    font-size: 1.6rem;
+    color: #5B5FE8;
+}
+
+.month {
+    color: gray;
+}
