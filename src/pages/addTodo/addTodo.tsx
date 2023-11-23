@@ -25,12 +25,12 @@ const AddTodo = () => {
         dispatch(changeScreen({ screen: 'list' }))
 
     }
-    useEffect(() => {
-        console.log(data)
-        return () => {
+    // useEffect(() => {
+    //     // console.log(data)
+    //     return () => {
 
-        }
-    }, [data]);
+    //     }
+    // }, [data]);
 
     return (
         <>
@@ -55,7 +55,7 @@ const AddTodo = () => {
                     <Form.Control
                         type="text"
                         id="title"
-                        value={data.title}
+                        placeholder={'Enter title'}
                         aria-describedby=""
                         onChange={(event) => {
                             setData((prev) => {
