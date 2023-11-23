@@ -1,23 +1,24 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import Form from 'react-bootstrap/esm/Form';
-import { stateType, taskData } from '../../models/home';
+// import { stateType, taskData } from '../../models/home';
 import { Button } from 'react-bootstrap';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addTask, changeScreen } from '../../store/reducers/rootReducer'
 import { env } from "../../enviorment";
 import './addTodo.css';
 import Select from '../../components/select/Select';
+import { generateRandomKey } from '../../services/utils';
 
 
 const AddTodo = () => {
-    const tasksLength: Array<taskData> = useSelector((state: stateType) => state?.root?.tasks);
+    // const tasksLength: Array<taskData> = useSelector((state: stateType) => state?.root?.tasks);
     const dispatch = useDispatch()
     const [data, setData] = useState({
         "title": "edit this task",
         "project": "Project2",
         "todo_complete": false,
         "todo_assign_to": "Developer1",
-        "_id": tasksLength.length + 1,
+        "_id": generateRandomKey(8),
     })
 
     let save = (event: FormEvent) => {

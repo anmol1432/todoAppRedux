@@ -8,9 +8,9 @@ const Select = ({ defaultValue, changeEvent, options, disable }: select) => {
         <>
             <Form.Select disabled={disable} aria-label="Default select example" value={defaultValue ? defaultValue : ''} onChange={changeEvent ? changeEvent : () => ''}>
                 {
-                    options.map(data => {
+                    options.map((data, index) => {
                         return (<>
-                            <option key={data} value={data} >{data}</option>
+                            <option key={index} value={data} >{data}</option>
                         </>)
                     })
                 }
