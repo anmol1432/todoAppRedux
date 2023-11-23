@@ -3,7 +3,7 @@ import './task.css'
 import Select from '../select/Select';
 import Button from 'react-bootstrap/Button';
 import { BsFillTrash3Fill, BsPen } from "react-icons/bs";
-import { decrement, increment, doneTask, changeDev, deleteTask } from '../../store/reducers/rootReducer'
+import { doneTask, changeDev, deleteTask } from '../../store/reducers/rootReducer'
 import { taskProps } from '../../models/task';
 import { useDispatch } from 'react-redux';
 import { env } from '../../enviorment';

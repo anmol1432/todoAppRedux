@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import React from 'react'
+import { useSelector } from 'react-redux'
 import Date from "../../components/date/Date";
 import Task from "../../components/task/Task";
-import axios from 'axios';
-import { env } from "../../enviorment";
+// import axios from 'axios';
+// import { env } from "../../enviorment";
 import { home, stateType, taskData } from "../../models/home";
 import './home.css'
 import AddBtn from '../../components/addBtn/AddBtn';
-import { JsxElement } from 'typescript';
+// import { JsxElement } from 'typescript';
 import AddTodo from '../addTodo/addTodo';
 
 
 
 const Home = ({ title }: home) => {
-    const [data, setData] = useState(Array<taskData>)
+    // const [data, setData] = useState(Array<taskData>)
     const toogleScreen = useSelector((state: stateType) => state?.root?.screen);
     const state = useSelector((state: stateType) => state?.root?.tasks);
 
-    useEffect(() => {
-        console.log(state)
-        // axios.get(env.apiBase).then((response) => setData(response.data)).catch((error) => console.log(error))
-    }, [])
+    // useEffect(() => {
+    //     console.log(state)
+    //     // axios.get(env.apiBase).then((response) => setData(response.data)).catch((error) => console.log(error))
+    // }, [])
 
     const renderContent = () => {
         switch (toogleScreen) {

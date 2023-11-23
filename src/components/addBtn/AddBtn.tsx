@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react'
+import React from 'react'
 import "./addBtn.css";
 import { useDispatch } from 'react-redux';
 import { changeScreen } from '../../store/reducers/rootReducer';
@@ -6,11 +6,7 @@ import { changeScreen } from '../../store/reducers/rootReducer';
 
 const AddBtn = () => {
     const dispatch = useDispatch()
-    // const handleClick = (event) => {
-    //     console.log('handleClick');
 
-    //     event.preventDefault()
-    // }
     return (
         <>
             <span className='svg' onClick={() => dispatch(changeScreen({ screen: 'add' }))}>
